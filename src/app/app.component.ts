@@ -13,4 +13,10 @@ export class AppComponent {
     new WishItem('Build 5 football pitches in Argentina')
   ];
   title = 'Shooting Stars';
+
+  toggleItem(item : WishItem){
+    item.isComplete = !item.isComplete;
+    console.log(item);
+    
+  }
 }
